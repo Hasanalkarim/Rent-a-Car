@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="496.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="vewandcontroller.hasanal2010014.ManagerManufacturePieChartSceneController">
+   <children>
+      <PieChart fx:id="manufactureVehiclePie" layoutX="50.0" layoutY="48.0" title="Manufacturer Vehicles" />
+   </children>
+</AnchorPane>

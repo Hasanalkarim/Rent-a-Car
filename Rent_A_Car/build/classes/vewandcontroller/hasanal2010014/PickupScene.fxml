@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="139.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vewandcontroller.hasanal2010014.PickupSceneController">
+   <children>
+      <HBox layoutX="23.0" layoutY="46.0" prefHeight="21.0" prefWidth="327.0">
+         <children>
+            <Label prefHeight="24.0" prefWidth="81.0" text="Cabin Size">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="cabinSizeTextField" />
+         </children>
+      </HBox>
+      <HBox layoutX="23.0" layoutY="96.0" prefHeight="22.0" prefWidth="248.0">
+         <children>
+            <Label text="TaillGate Stairs ">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <RadioButton fx:id="yesRadioButton" mnemonicParsing="false" text="Yes">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="No" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

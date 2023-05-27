@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <left>
+            <VBox prefHeight="813.0" prefWidth="219.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="78.0" prefWidth="165.0" style="-fx-background-color: white;" />
+                  <VBox prefHeight="437.0" prefWidth="212.0">
+                     <children>
+                        <Label prefHeight="43.0" prefWidth="201.0" text="Rental DETAILS">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="DateAndTimes">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="pickupDateAndTimeOutputLabel" prefHeight="59.0" prefWidth="183.0" text="pickup D T">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="dropOffDateAndTimeOutputLabel" layoutX="10.0" layoutY="99.0" prefHeight="50.0" prefWidth="169.0" text="Dropoff D T" />
+                        <Label text="PickupAndDropoff Location">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="pickAndDropOffLocationOutputLabel" prefHeight="117.0" prefWidth="201.0" text="P D L">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Aditional Detailes">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="68.0" prefWidth="215.0">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="85.0" text="Renter Age: " />
+                              <Label fx:id="ageOutputLabel" prefHeight="24.0" prefWidth="57.0" text="age" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <padding>
+                        <Insets left="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <Pane prefHeight="68.0" prefWidth="219.0" style="-fx-background-color: white;" />
+                  <VBox prefHeight="338.0" prefWidth="215.0">
+                     <children>
+                        <Label prefHeight="42.0" prefWidth="211.0" text="Vehicle DETAILS">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="carNameOutputLabel" prefHeight="18.0" prefWidth="190.0" text="car name">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="36.0" prefWidth="215.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="144.0" text="Time &amp; Distance/Day " />
+                              <Label fx:id="timeAndDistancePriceOutputLabel" prefHeight="25.0" prefWidth="51.0" text="      $" />
+                           </children>
+                        </HBox>
+                        <Label prefHeight="38.0" prefWidth="150.0" text="Extra Features" />
+                        <Label fx:id="extraFeaturesOutputLabel" layoutX="10.0" layoutY="107.0" prefHeight="106.0" prefWidth="219.0" text="extra                                   $" />
+                        <HBox prefHeight="51.0" prefWidth="215.0">
+                           <children>
+                              <Label prefHeight="34.0" prefWidth="155.0" text="Taxe and fees" />
+                              <Label fx:id="taxAndFeesOutputLabel" prefHeight="35.0" prefWidth="60.0" text="      $" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="51.0" prefWidth="215.0">
+                           <children>
+                              <Label prefHeight="36.0" prefWidth="121.0" text="Tottal Fees" />
+                              <Label fx:id="totallFeesOutputLabel" prefHeight="36.0" prefWidth="91.0" text="             $" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="10.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children></VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="1398.0" prefWidth="574.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="37.0" layoutY="49.0" prefHeight="37.0" prefWidth="213.0" text="Driver Information">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font></Label>
+                  <Line endX="435.0" layoutX="138.0" layoutY="93.0" startX="-100.0" />
+                  <TextField fx:id="countryTextField" layoutX="136.0" layoutY="536.0" />
+                  <TextField fx:id="driverLicenseTextField" layoutX="144.0" layoutY="139.0" />
+                  <TextField fx:id="issuingCountryTextField" layoutX="144.0" layoutY="184.0" />
+                  <Label layoutX="26.0" layoutY="143.0" text="Drivers License" />
+                  <Label layoutX="42.0" layoutY="532.0" text="Country" />
+                  <Label layoutX="25.0" layoutY="188.0" text="Issuing Country" />
+                  <DatePicker fx:id="expirationDateDatePicker" layoutX="143.0" layoutY="231.0" />
+                  <DatePicker fx:id="dateOfBirthDatePicker" layoutX="143.0" layoutY="331.0" />
+                  <DatePicker fx:id="issueDateDatePicker" layoutX="143.0" layoutY="281.0" />
+                  <Label layoutX="24.0" layoutY="235.0" prefHeight="16.0" prefWidth="104.0" text="Expiration Date" />
+                  <Label layoutX="41.0" layoutY="335.0" text="Date of Birth" />
+                  <Label layoutX="41.0" layoutY="285.0" text="Issue Date" />
+                  <TextField fx:id="addressTextField" layoutX="136.0" layoutY="422.0" prefHeight="24.0" prefWidth="287.0" />
+                  <Label layoutX="41.0" layoutY="426.0" text="Address" />
+                  <Label layoutX="42.0" layoutY="482.0" text="City" />
+                  <TextField fx:id="cityTextField" layoutX="136.0" layoutY="478.0" />
+                  <Label layoutX="336.0" layoutY="482.0" text="StreetNo" />
+                  <TextField fx:id="streetNoTextField" layoutX="406.0" layoutY="478.0" prefHeight="24.0" prefWidth="108.0" />
+                  <Label layoutX="46.0" layoutY="586.0" text="Zip Code" />
+                  <TextField fx:id="zipCodeTextField" layoutX="136.0" layoutY="582.0" />
+                  <TextField fx:id="phoneNumberTextField" layoutX="175.0" layoutY="641.0" />
+                  <Label layoutX="46.0" layoutY="645.0" text="Phone Number" />
+                  <Button layoutX="406.0" layoutY="767.0" mnemonicParsing="false" onAction="#checkInButtonOnClick" text="Check-In" />
+                  <Button layoutX="55.0" layoutY="767.0" mnemonicParsing="false" onAction="#cancelButtonOnClick" text="Cancel" />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Reservation">
+                     <items>
+                        <MenuItem fx:id="reservationMenuItemOnClick" mnemonicParsing="false" text="Start a Reservation" />
+                        <MenuItem fx:id="onlineCheckInMenuItemOnClick" mnemonicParsing="false" text="Online-CheckIn" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="offerMenuOnClick" mnemonicParsing="false" text="Offer" />
+                  <Menu fx:id="memberMenuOnClick" mnemonicParsing="false" text="Member" />
+                  <Menu fx:id="locationMenuOnClick" mnemonicParsing="false" text="Location" />
+                  <Menu fx:id="queriseMenuOnClick" mnemonicParsing="false" text="Querise" />
+                  <Menu fx:id="printReceiptMenuOnClick" mnemonicParsing="false" text="Print Receipt" />
+               </menus>
+            </MenuBar>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="44.0" prefWidth="773.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </content>
+</ScrollPane>

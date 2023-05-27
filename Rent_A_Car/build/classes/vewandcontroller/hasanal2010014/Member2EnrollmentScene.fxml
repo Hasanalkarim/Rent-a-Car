@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="878.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vewandcontroller.hasanal2010014.Member2EnrollmentSceneController">
+   <content>
+      <BorderPane>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Reservation">
+                     <items>
+                        <MenuItem fx:id="reservationMenuItemOnClick" mnemonicParsing="false" text="Start a Reservation" />
+                        <MenuItem fx:id="onlineCheckInMenuItemOnClick" mnemonicParsing="false" text="Online-CheckIn" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="offerMenuOnClick" mnemonicParsing="false" text="Offer" />
+                  <Menu fx:id="memberMenuOnClick" mnemonicParsing="false" text="Member" />
+                  <Menu fx:id="locationMenuOnClick" mnemonicParsing="false" text="Location" />
+                  <Menu fx:id="queriseMenuOnClick" mnemonicParsing="false" text="Querise" />
+                  <Menu fx:id="printReceiptMenuOnClick" mnemonicParsing="false" text="Print Receipt" />
+               </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="612.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <opaqueInsets>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </opaqueInsets>
+               <children>
+                  <TextField fx:id="cardNumberTextField" layoutX="151.0" layoutY="106.0" promptText="Customer id" />
+                  <Label layoutX="159.0" layoutY="32.0" text="Join as">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="347.0" layoutY="105.0" mnemonicParsing="false" onAction="#submitButtonOnClick" prefHeight="26.0" prefWidth="54.0" text="Go" />
+                  <Label layoutX="155.0" layoutY="70.0" text="if you have account then give your id" />
+                  <Line endX="504.0" layoutX="108.0" layoutY="155.0" startX="-100.0" />
+                  <Label fx:id="memberNameOutputLabel" layoutX="257.0" layoutY="32.0" text="Dash">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="331.0" layoutY="32.0" text="Member">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="firstNameTextField" layoutX="86.0" layoutY="230.0" promptText="First Name" />
+                  <TextField fx:id="middleNameTextField" layoutX="277.0" layoutY="230.0" promptText="Middle Name" />
+                  <TextField fx:id="lastNameTextField" layoutX="86.0" layoutY="278.0" promptText="Last Name" />
+                  <TextField fx:id="phoneNumberTextField" layoutX="88.0" layoutY="329.0" prefHeight="35.0" prefWidth="298.0" promptText="Phone Number" />
+                  <TextField fx:id="emailTextFiled" layoutX="88.0" layoutY="390.0" prefHeight="35.0" prefWidth="298.0" promptText="Email" />
+                  <Label layoutX="78.0" layoutY="172.0" text="Contact DETAILS">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="86.0" layoutY="460.0" mnemonicParsing="false" onAction="#nextButtonOnClick" prefHeight="26.0" prefWidth="102.0" text="Next" />
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="36.0" prefWidth="698.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </content>
+</ScrollPane>

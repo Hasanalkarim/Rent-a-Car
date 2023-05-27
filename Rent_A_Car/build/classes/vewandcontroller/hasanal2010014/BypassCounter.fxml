@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane prefHeight="438.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="169.0" layoutY="65.0" prefHeight="43.0" prefWidth="232.0" text="Bypass Counter">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstNameTextField" layoutX="215.0" layoutY="164.0" />
+            <Label layoutX="121.0" layoutY="168.0" text="First Name" />
+            <Label layoutX="113.0" layoutY="231.0" text="Middle Name" />
+            <TextField fx:id="middleNameTextField" layoutX="215.0" layoutY="227.0" />
+            <TextField fx:id="confermationNumberTextField" layoutX="215.0" layoutY="340.0" />
+            <TextField fx:id="lastNameTextField" layoutX="215.0" layoutY="283.0" />
+            <Label layoutX="48.0" layoutY="344.0" text="Confermation Number" />
+            <Label layoutX="113.0" layoutY="287.0" text="Last Name" />
+            <Button layoutX="215.0" layoutY="391.0" mnemonicParsing="false" onAction="#checkInButtonOnClick" text="Enter" />
+            <Label layoutX="26.0" layoutY="118.0" text="After activating Online Check In you can Skip The counter and Go straight to Your Vehicle" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Reservation">
+               <items>
+                  <MenuItem fx:id="reservationMenuItemOnClick" mnemonicParsing="false" text="Start a Reservation" />
+                  <MenuItem fx:id="onlineCheckInMenuItemOnClick" mnemonicParsing="false" text="Online-CheckIn" />
+               </items>
+            </Menu>
+            <Menu fx:id="offerMenuOnClick" mnemonicParsing="false" text="Offer" />
+            <Menu fx:id="memberMenuOnClick" mnemonicParsing="false" text="Member" />
+            <Menu fx:id="locationMenuOnClick" mnemonicParsing="false" text="Location" />
+            <Menu fx:id="queriseMenuOnClick" mnemonicParsing="false" text="Querise" />
+            <Menu fx:id="printReceiptMenuOnClick" mnemonicParsing="false" text="Print Receipt" />
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

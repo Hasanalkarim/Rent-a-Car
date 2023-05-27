@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="212.0" fitWidth="723.0" layoutX="-56.0" layoutY="157.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Hertz.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="26.0" layoutY="28.0" prefHeight="464.0" prefWidth="614.0">
+         <children>
+            <Text fill="#dfd2a3" fontSmoothingType="LCD" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HR Manager" wrappingWidth="149.93670654296875">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="27.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Text>
+            <Button layoutX="388.0" layoutY="52.0" mnemonicParsing="false" onAction="#LeaveApp" opacity="0.94" prefHeight="47.0" prefWidth="212.0" text=" Leave Applications" textAlignment="CENTER" textFill="#847c39">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="388.0" layoutY="121.0" mnemonicParsing="false" onAction="#ManageWorkSchedule" prefHeight="47.0" prefWidth="212.0" text="Manage Work Schedule" textAlignment="CENTER" textFill="#847c39">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="388.0" layoutY="192.0" mnemonicParsing="false" onAction="#BudgetAllocationCheck" prefHeight="47.0" prefWidth="212.0" text="Budget Allocation Check" textFill="#847c39">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="388.0" layoutY="263.0" mnemonicParsing="false" onAction="#RecruitSystem" prefHeight="47.0" prefWidth="212.0" text="Recruit System" textFill="#847c39">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="388.0" layoutY="334.0" mnemonicParsing="false" onAction="#PerformanceReview" prefHeight="47.0" prefWidth="212.0" text="Performance Review" textAlignment="CENTER" textFill="#847c39">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="388.0" layoutY="402.0" mnemonicParsing="false" onAction="#SurveyButton" prefHeight="47.0" prefWidth="212.0" text="Conduct Surveys &amp; Consultation " textFill="#847c39">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="700.0" layoutY="736.0" mnemonicParsing="false" onAction="#LeaveHRScene" text="Log Out" />
+   </children>
+</AnchorPane>

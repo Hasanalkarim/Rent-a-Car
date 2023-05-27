@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="571.0" prefWidth="754.0">
+         <children>
+            <ComboBox fx:id="toyotaCombo" layoutX="39.0" layoutY="173.0" prefWidth="150.0" promptText="TOYOTA" />
+            <ComboBox fx:id="hyundaiCombo" layoutX="210.0" layoutY="173.0" prefWidth="150.0" promptText="HYUNDAI" />
+            <ComboBox fx:id="audiCombo" layoutX="39.0" layoutY="46.0" prefWidth="150.0" promptText="AUDI" />
+            <ComboBox fx:id="bmwCombo" layoutX="210.0" layoutY="46.0" prefWidth="150.0" promptText="BMW" />
+            <Button layoutX="421.0" layoutY="76.0" mnemonicParsing="false" onAction="#addButtonOnClick" prefHeight="94.0" prefWidth="127.0" text="ADD" />
+            <Button layoutX="483.0" layoutY="292.0" mnemonicParsing="false" onAction="#addAndShowButtonOnClick" prefHeight="46.0" prefWidth="138.0" text="ADD AND SHOW" />
+            <TextArea fx:id="outputTextArea" layoutX="22.0" layoutY="275.0" prefHeight="274.0" prefWidth="391.0" />
+            <Button layoutX="484.0" layoutY="412.0" mnemonicParsing="false" onAction="#repairingConfirmButtonOnClick" prefHeight="46.0" prefWidth="138.0" text="REPAIRING CONFIRM" />
+            <Line endX="595.0" layoutX="123.0" layoutY="235.0" startX="-100.0" />
+            <Button layoutX="603.0" layoutY="76.0" mnemonicParsing="false" onAction="#deleteButtonOnClick" prefHeight="94.0" prefWidth="127.0" text="DELETE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

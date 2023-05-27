@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1579.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vewandcontroller.hasanal2010014.ReservationConfirmedSceneController">
+   <content>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="60.0" layoutY="34.0" prefHeight="41.0" prefWidth="458.0" text="Reservation Confermed Successfully">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="86.0" prefHeight="30.0" prefWidth="213.0" text=" Confermation Number">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="confermationNumberOutputlabel" layoutX="273.0" layoutY="86.0" prefHeight="30.0" prefWidth="213.0" text="              number">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="161.0" prefHeight="39.0" prefWidth="273.0" text="                    Pickup Detailes" />
+                  <Label fx:id="dropOffDetailsOutputlabel" layoutX="302.0" layoutY="206.0" prefHeight="122.0" prefWidth="278.0" text="Label" />
+                  <Label fx:id="pickupDetailsOutputlabel" layoutX="20.0" layoutY="211.0" prefHeight="120.0" prefWidth="279.0" text="Label" />
+                  <Label layoutX="302.0" layoutY="165.0" prefHeight="32.0" prefWidth="278.0" text="                 DropOff Detailes" />
+                  <Line endX="313.0" layoutX="268.0" layoutY="330.0" startX="-247.0" />
+                  <Line endX="313.0" layoutX="266.0" layoutY="159.0" startX="-247.0" />
+                  <Line endX="-99.5" endY="174.0" layoutX="120.0" layoutY="156.0" startX="-100.0" />
+                  <Line endX="-99.5" endY="174.0" layoutX="681.0" layoutY="160.0" startX="-100.0" />
+                  <Line endX="-99.5" endY="174.0" layoutX="400.0" layoutY="160.0" startX="-100.0" />
+                  <AnchorPane layoutX="21.0" layoutY="411.0" prefHeight="938.0" prefWidth="583.0" style="-fx-background-color: White;">
+                     <children>
+                        <Label layoutX="11.0" layoutY="14.0" prefHeight="41.0" prefWidth="178.0" text="Renter Details">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="96.0" prefHeight="35.0" prefWidth="170.0" text="Your Information">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Line endX="313.0" layoutX="269.0" layoutY="131.0" startX="-247.0" />
+                        <VBox layoutX="22.0" layoutY="144.0" prefHeight="149.0" prefWidth="322.0">
+                           <children>
+                              <HBox prefHeight="33.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="33.0" prefWidth="128.0" text="Driver Name" />
+                                    <Label fx:id="driverNameTextField" prefHeight="33.0" prefWidth="93.0" text="nam" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="33.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="33.0" prefWidth="124.0" text="Email" />
+                                    <Label fx:id="emailTextField" prefHeight="33.0" prefWidth="193.0" text="\@" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="33.0" prefWidth="254.0">
+                                 <children>
+                                    <Label prefHeight="32.0" prefWidth="125.0" text="Phone" />
+                                    <Label fx:id="phoneTextField" prefHeight="33.0" prefWidth="181.0" text="000" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="33.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="33.0" prefWidth="124.0" text="Age" />
+                                    <Label fx:id="ageTextField" prefHeight="35.0" prefWidth="56.0" text="25" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label layoutX="16.0" layoutY="347.0" prefHeight="35.0" prefWidth="69.0" text="Vehicle">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Line endX="313.0" layoutX="263.0" layoutY="390.0" startX="-247.0" />
+                        <VBox layoutX="30.0" layoutY="426.0" prefHeight="85.0" prefWidth="454.0">
+                           <children>
+                              <HBox prefHeight="33.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="33.0" prefWidth="342.0" text="Vehicle Class" />
+                                    <Label fx:id="vehicleClassTextField" prefHeight="33.0" prefWidth="93.0" text=" economy" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="33.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="totalDaysOutputLabel" prefHeight="33.0" prefWidth="354.0" text="Total Days Price" />
+                                    <Label fx:id="totalDaysPriceOutputLabel" prefHeight="35.0" prefWidth="104.0" text="\$0.000" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label layoutX="16.0" layoutY="563.0" prefHeight="35.0" prefWidth="127.0" text="Tax And Fees">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Line endX="313.0" layoutX="260.0" layoutY="605.0" startX="-247.0" />
+                        <VBox layoutX="30.0" layoutY="628.0" prefHeight="149.0" prefWidth="462.0">
+                           <children>
+                              <HBox prefHeight="33.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="32.0" prefWidth="350.0" text="LESSOR TAX 2%" />
+                                    <Label fx:id="lessorTextField" prefHeight="35.0" prefWidth="56.0" text="\$0.00" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="33.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="33.0" prefWidth="349.0" text="AUTO RENTAL TAX (12.0%)" />
+                                    <Label fx:id="autoRentalTextField" prefHeight="35.0" prefWidth="56.0" text="\$0.00" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="33.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="33.0" prefWidth="349.0" text="CONC RECOVERY FEE $2/Day" />
+                                    <Label fx:id="concessionTextField" prefHeight="33.0" prefWidth="93.0" text="\$0.00" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="33.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="33.0" prefWidth="348.0" text="VLCRF $2/DAY" />
+                                    <Label fx:id="vlcrfTextField" prefHeight="35.0" prefWidth="56.0" text="\$0.00" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label layoutX="16.0" layoutY="814.0" prefHeight="35.0" prefWidth="127.0" text="Total">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Line endX="313.0" layoutX="260.0" layoutY="860.0" startX="-247.0" />
+                        <VBox layoutX="34.0" layoutY="883.0" prefHeight="85.0" prefWidth="454.0">
+                           <children>
+                              <HBox prefHeight="33.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="33.0" prefWidth="339.0" text="Total due at the counter" />
+                                    <Label fx:id="totalTextField" prefHeight="33.0" prefWidth="93.0" text="\$0.000" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+                  <Button layoutX="261.0" layoutY="357.0" mnemonicParsing="false" onAction="#printButtonOnClick" prefHeight="24.0" prefWidth="76.0" text="Print" />
+                  <Button layoutX="351.0" layoutY="1401.0" mnemonicParsing="false" onAction="#printAndSwitchSceneButtonOnClick" prefHeight="32.0" prefWidth="159.0" text="Print" />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Reservation">
+                     <items>
+                        <MenuItem fx:id="reservationMenuItemOnClick" mnemonicParsing="false" text="Start a Reservation" />
+                        <MenuItem fx:id="onlineCheckInMenuItemOnClick" mnemonicParsing="false" text="Online-CheckIn" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="offerMenuOnClick" mnemonicParsing="false" text="Offer" />
+                  <Menu fx:id="memberMenuOnClick" mnemonicParsing="false" text="Member" />
+                  <Menu fx:id="locationMenuOnClick" mnemonicParsing="false" text="Location" />
+                  <Menu fx:id="queriseMenuOnClick" mnemonicParsing="false" text="Querise" />
+                  <Menu fx:id="printReceiptMenuOnClick" mnemonicParsing="false" text="Print Receipt" />
+               </menus>
+            </MenuBar>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="55.0" prefWidth="604.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </content>
+</ScrollPane>
